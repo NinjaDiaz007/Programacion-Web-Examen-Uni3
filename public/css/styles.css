@@ -1,0 +1,204 @@
+/*Variables*/
+:root{
+    --fondo: #fff;
+    --fondo1: #24303c;
+    --fondo2: #1f53c5;
+    --fondo3: #f9f9f9;
+    --opaco: rgba(0,0,0,0.5);
+    --opaco1: #959595;
+    --icono: #46A2FD;
+    --caja: rgba(0, 128, 255, 0.5);
+    --negro: #000;
+    --blanco: #fff;
+    /*Reses Sociales*/
+    --facebook: #2e406e;
+    --twitter: #339dc5;
+    --telegram: #46a2fd;
+}
+
+/*============================================*/
+/*=========Botones de opcion de pedido========*/
+/*============================================*/
+.opciones-guardado{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+}
+.opciones-guardado button{
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--blanco);
+    border-radius: 6px;
+    background-color: var(--fondo1);
+    border: none;
+}
+.opciones-guardado button:hover{
+    background-color: var(--fondo2);
+}
+
+@media screen and(max-width: 980px) {
+    .opciones-guardado{
+        margin-top: 30px;
+        margin-left: 30%;
+        margin-right: 30%;
+        width: 40%;
+    }
+}
+@media screen and(max-width: 600px) {
+    .opciones-guardado{
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+/*============================================*/
+
+/*============================================*/
+/*=======Ventana para enviar al correo========*/
+/*============================================*/
+.enviar{
+    width: 350px;
+    background: var(--fondo1);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.from-enviar{
+    color: var(--blanco);
+}
+.enviar .botn{
+    width: 100%;
+    background: var(--fondo2);
+    border: none;
+    padding: 12px;
+    color: var(--blanco);
+    margin: 12px 0;
+    font-size: 16px;
+}
+/*============================================*/
+
+/*============================================*/
+/*==========Formulario de Contacto============*/
+/*============================================*/
+.form-contact{
+    width: 500px;
+    background: var(--fondo1);
+    padding: 30px;
+    margin: auto;
+    margin-top: 93px;
+    margin-bottom: 93px;
+    border-radius: 4px;
+    color: var(--blanco);
+    box-shadow: 7px 13px 37px var(--negro);
+}
+.form-contact h2{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.form-contact p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+.form-contact .boton{
+    width: 100%;
+    background: var(--fondo2);
+    border: none;
+    padding: 12px;
+    color: var(--blanco);
+    margin: 12px 0;
+    font-size: 16px;
+    text-decoration: none;
+}
+.form-contact .boton:hover{
+    background-color: var(--fondo2);
+    color: var(--blanco);
+}
+
+@media screen and(max-width: 1000px) {
+    .form-contact{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+/*============================================*/
+
+/*============================================*/
+/*===========Formulario de compras============*/
+/*============================================*/
+.form-compra{
+    width: 500px;
+    background: var(--fondo1);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    color: var(--blanco);
+}
+.form-compra .texto{
+    font-size: 20px;
+    text-align: center;
+}
+/*============================================*/
+
+
+/*============================================*/
+/*==========Pagina de Agradecimiento==========*/
+/*============================================*/
+.form-gracias{
+    width: 750px;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--blanco);
+    background-color: var(--opaco1);
+}
+.form-gracias .conten-img{
+    width: 100%;
+    height: 350px;
+}
+.form-gracias .conten-text{
+    width: 100%;
+    height: 350px;
+    padding: 10px 25px;
+}
+/*============================================*/
+
+/*============================================*/
+/*===============Redes Sociales===============*/
+/*============================================*/
+.sociales{
+    padding-top: 20px;
+    text-align: center;
+}
+.sociales a{
+    padding: 5px;
+    font-size: 50px;
+}
+.sociales .facebook{
+    color: var(--facebook);
+}
+.sociales .twitter{
+    color: var(--twitter);
+}
+.sociales .telegram{
+    color: var(--telegram);
+}
+/*============================================*/
+
+/*============================================*/
+/*============================================*/
+/*============================================*/
+/*============================================*/

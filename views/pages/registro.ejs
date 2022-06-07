@@ -1,0 +1,145 @@
+<%- contentFor('super') %>
+<input type="checkbox" name="calculadora" id="btn-menu">
+<label for="btn-menu" class="btn-menu">
+    <img src="./img/calculadora.png" class="img-calculadora">
+</label>
+
+<div class="container-menu">
+    <div class="cont-menu">
+        <label for="">x</label>
+        <div class="content-body">
+            <div class="content-calculator">
+                <div class="screen">
+                    <input type="text" placeholder="0" disabled id="screen-result">
+                </div>
+                <div class="btn-cal btn-cal-radius">
+                    <input type="button" value="7" onclick="getData(this)">
+                </div>
+                <div class="btn-cal btn-cal-radius">
+                    <input type="button" value="8" onclick="getData(this)">
+                </div>
+                <div class="btn-cal btn-cal-radius">
+                    <input type="button" value="9" onclick="getData(this)">
+                </div>
+                <div class="btn-cal btn-cal-radius">
+                    <input type="button" value="+" onclick="getData(this)">
+                </div>
+                <div class="btn-cal btn-cal-radius">
+                    <input type="button" value="4" onclick="getData(this)">
+                </div>
+                <div class="btn-cal btn-cal-radius">
+                    <input type="button" value="5" onclick="getData(this)">
+                </div>
+                <div class="btn-cal btn-cal-radius">
+                    <input type="button" value="6" onclick="getData(this)">
+                </div>
+                <div class="btn-cal btn-cal-radius">
+                    <input type="button" value="-" onclick="getData(this)">
+                </div>
+                <div class="btn-cal btn-cal-radius">
+                    <input type="button" value="1" onclick="getData(this)">
+                </div>
+                <div class="btn-cal btn-cal-radius">
+                    <input type="button" value="2" onclick="getData(this)">
+                </div>
+                <div class="btn-cal btn-cal-radius">
+                    <input type="button" value="3" onclick="getData(this)">
+                </div>
+                <div class="btn-cal btn-cal-radius">
+                    <input type="button" value="*" onclick="getData(this)">
+                </div>
+                <div class="btn-cal btn-cal-radius">
+                    <input type="button" value="0" onclick="getData(this)">
+                </div>
+                <div class="btn-cal btn-cal-radius">
+                    <input type="button" value="/" onclick="getData(this)">
+                </div>
+                <div class="btn-cal btn-cal-radius btn-clean">
+                    <input type="button" value="C" class="clean" onclick="clean()">
+                </div>
+                <div class="btn-cal btn-cal-radius btn-equal">
+                    <input type="button" value="=" class="equal" onclick="calculate()">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- contentFor('body') %>
+<div class="cambio">
+    <div class="row">
+        <div class="col-md-6">
+            <label class="VC">Monto del dolar</label>
+        </div>
+        <div class="col-md-6">
+            <label class="VC">Monto en pesos</label>
+        </div>
+    
+        <div class="col-md-6">
+            <span class="span-dolar" id="span_dolar"></span>
+        </div>
+        <div class="col-md-6">
+            <span class="span-peso" id="span_peso"></span>
+        </div>
+    </div>
+</div>
+
+<table border="1" class="tabla" id="tabla">
+    <tr class="columna">
+        <th class="negrita dia">Dias</th>
+        <th class="negrita dolar">Dolar</th>
+        <th class="negrita peso">Pesos</th>
+    </tr>
+
+    <tr class="columna">
+        <td class="dia-semana">Domingo</td>
+        <td class="dinero"></td>
+        <td class="dinero"></td>
+    </tr>
+
+    <tr class="columna">
+        <td class="dia-semana">Lunes</td>
+        <td class="dinero"></td>
+        <td class="dinero"></td>
+    </tr>
+
+    <tr class="columna">
+        <td class="dia-semana">Martes</td>
+        <td class="dinero"></td>
+        <td class="dinero"></td>
+    </tr>
+
+    <tr class="columna">
+        <td class="dia-semana">Miercoles</td>
+        <td class="dinero"></td>
+        <td class="dinero"></td>
+    </tr>
+
+    <tr class="columna">
+        <td class="dia-semana">Jueves</td>
+        <td class="dinero"></td>
+        <td class="dinero"></td>
+    </tr>
+
+    <tr class="columna">
+        <td class="dia-semana">Viernes</td>
+        <td class="dinero"></td>
+        <td class="dinero"></td>
+    </tr>
+
+    <tr class="columna">
+        <td class="dia-semana">Sabado</td>
+        <td class="dinero"></td>
+        <td class="dinero"></td>
+    </tr>
+
+    <tr class="columna">
+        <th class="total">Total:</th>
+        <td class="dinero"></td>
+        <td class="dinero"></td>
+    </tr>
+</table>
+
+<div class="opciones-guardado">
+    <button id="btnExportar">Guardar</button>
+</div>

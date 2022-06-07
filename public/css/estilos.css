@@ -1,0 +1,550 @@
+*{
+     margin: o;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+/*Variables*/
+:root{
+    --fondo: #fff;
+    --fondo1: #24303c;
+    --fondo2: #1f53c5;
+    --fondo3: #f9f9f9;
+    --opaco: rgba(0,0,0,0.5);
+    --opaco1: #959595;
+    --icono: #46A2FD;
+    --caja: rgba(0, 128, 255, 0.5);
+    --negro: #000;
+    --blanco: #fff;
+    /*Reses Sociales*/
+    --facebook: #2e406e;
+    --twitter: #339dc5;
+    --telegram: #46a2fd;
+}
+
+body{
+     font-size: 18px;
+     font-family: Arial;
+}
+
+.marcos{
+     margin-top: 4rem;
+     margin-bottom: 3rem;
+     margin-left: 4.5rem;
+     margin-right: 4.5rem;
+}
+
+.espacio{
+    padding-top: 43px;
+}
+
+/*============================================*/
+/*===============Pie de Pagina================*/
+/*============================================*/
+.footer-pie{
+     padding-top: 12px;
+     padding-bottom: 12px;
+     background-color: var(--fondo1);
+     text-align: center;
+     color: var(--blanco)
+}
+
+.footer-nanvbar{
+    margin-right: 5px;
+}
+/*============================================*/
+
+/*============================================*/
+/*=================Navbar=====================*/
+/*============================================*/
+.navbar-pro{
+     background-color: var(--fondo1);
+     font-size: 18px;
+     position: fixed;
+     z-index: 100;
+     width: 100%;
+}
+/*============================================*/
+
+/*============================================*/
+/*==================Imagenes==================*/
+/*============================================*/
+.img-carrusel{
+    width: 100%;
+    height: 400px;
+}
+
+.img-calculadora{
+    width: 40px;
+    height: 40px;
+    position: fixed;
+}
+
+.img-gracias{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+}
+/*============================================*/
+
+/*============================================*/
+/*===============Reloj Digital================*/
+/*============================================*/
+.seccion{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: var(--fondo1);
+}
+.Reloj{
+    display: inline-block;
+    color: var(--blanco);
+    padding: 5px;
+    font-weight: bold;
+    font-size: 25px;
+}
+/*============================================*/
+
+/*============================================*/
+/*=================Formulario=================*/
+/*============================================*/
+.form-mensaje{
+     width: 500px;
+     background: var(--fondo1);
+     padding: 30px;
+     margin: auto;
+     margin-top: 100px;
+     margin-bottom: 100px;
+     border-radius: 4px;
+     color: var(--blanco);
+     box-shadow: 7px 13px 37px var(--negro);
+ }
+ 
+ .form-mensaje h2{
+     font-size: 22px;
+     margin-bottom: 20px;
+ }
+ 
+ .controles{
+     width: 100%;
+     background: var(--fondo1);
+     color: var(--blanco);
+     padding: 10px;
+     border-radius: 4px;
+     margin-bottom: 16px;
+     border: 1px solid var(--fondo2);
+     font-size: 18px;
+ }
+ 
+ .form-mensaje p{
+     height: 40px;
+     text-align: center;
+     font-size: 18px;
+ }
+ 
+ .form-mensaje .boton{
+     width: 100%;
+     background: var(--fondo2);
+     border: none;
+     padding: 12px;
+     color: var(--blanco);
+     margin: 12px 0;
+     font-size: 16px;
+ }
+/*============================================*/
+
+/*============================================*/
+/*=========Formulario para la venta===========*/
+/*============================================*/
+.form-venta{
+     width: 600px;
+     background: var(--fondo1);
+     padding: 30px;
+     margin: auto;
+     margin-top: 100px;
+     margin-bottom: 100px;
+     border-radius: 4px;
+     color: var(--blanco);
+}
+.form-venta .texto{
+     font-size: 20px;
+     text-align: center;
+}
+.form-venta .cantidad{
+    width: 90%;
+    height: 10px;
+}
+.form-venta h1{
+    text-align: center;
+}
+.form-venta .boton{
+    width: 100%;
+    background: var(--fondo2);
+    border: none;
+    padding: 12px;
+    color: var(--blanco);
+    margin: 12px 0;
+    font-size: 16px;
+}
+/*============================================*/
+
+/*============================================*/
+/*=======Formulario de Login y Registro=======*/
+/*============================================*/
+.contener-margen{
+    margin: auto;
+    padding: 100px 40px;
+}
+
+.contenedor__todo{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__trasera{
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: var(--caja);
+
+}
+.caja__trasera div{
+    margin: 100px 40px;
+    color: var(--blanco);
+    transition: all 500ms;
+}
+.caja__trasera div p,
+.caja__trasera button{
+    margin-top: 30px;
+}
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+.caja__trasera div p{
+    font-size: 16px;
+    font-weight: 300;
+}
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid var(--blanco);
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--blanco);
+    outline: none;
+    transition: all 300ms;
+}
+.caja__trasera button:hover{
+    background: var(--blanco);
+    color: var(--icono);
+}
+
+/*Formularios*/
+.contenedor__login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+    /*La transicion va despues del codigo JS*/
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+.contenedor__login-register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: var(--blanco);
+    position: absolute;
+    border-radius: 20px;
+}
+.contenedor__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--icono);
+}
+.contenedor__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+}
+.contenedor__login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: var(--icono);
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--blanco);
+    outline: none;
+}
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+.formulario__register{
+    display: none;
+}
+
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px;
+    }
+
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+
+    /*Formularios*/
+
+    .contenedor__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+    .contenedor__login-register form{
+        position: relative;
+    }
+}
+/*============================================*/
+
+/*============================================*/
+/*===============Botones de cambio============*/
+/*============================================*/
+.form-boton{
+     width: 100%;
+     height: auto;
+     background-color: var(--fondo1);
+     color: var(--blanco);
+     padding: 25px;
+     text-align: center;
+}
+.form-boton h2{
+     text-align: center;
+     font-size: 24px;
+}
+.form-boton .botn{
+     width: 100%;
+     height: auto;
+     font-size: 18px;
+     padding: 15px;
+     background-color: var(--fondo1);
+     color: var(--blanco);
+     border: 1px solid var(--fondo2);
+}
+.form-boton .botn:hover{
+     background-color: #273968;
+}
+/*============================================*/
+
+/*============================================*/
+/*===El tipo de cambio del dolar y del peso===*/
+/*============================================*/
+.cambio{
+     width: 100%;
+     height: auto;
+     color: var(--negro);
+     padding: 30px;
+     align-items: center;
+     text-align: center;
+     font-family: ARIAL;
+}
+.cambio .VC{
+     text-align: center;
+     padding: 20px;
+     font-size: 40px;
+}
+.cambio .venta,
+.cambio .compra{
+     padding: 15px;
+     font-size: 90px;
+     border: 1px solid var(--fondo2);
+     border-radius: 5px;
+}
+.cambio .span-dolar,
+.cambio .span-peso{
+    padding: 15px;
+     font-size: 90px;
+     border: 1px solid var(--fondo2);
+     border-radius: 5px;
+}
+/*============================================*/
+
+/*============================================*/
+/*=================Calculadora================*/
+/*============================================*/
+ .content-calculator {
+     width: 400px;
+     height: 450px;
+     position: fixed;
+     background-color: #aaaaaa;
+     border-radius: 10px;
+     padding: 20px 15px;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-rows: 85px;
+     grid-gap: 20px;
+ }
+
+ .screen{
+     background-color: #414141;
+     border-radius: 10px;
+     color: #57e8ff;
+     padding: 15px;
+     grid-column: 1 / 5;
+ }
+ 
+ .screen > input{
+     background: none;
+     color: inherit;
+     border: none;
+     padding: 0;
+     outline: inherit;
+     font-size: 50px;
+     width: 100%;
+ }
+ 
+ .btn-cal{
+     background-color: var(--blanco);
+ }
+ 
+ .btn-cal-radius{
+     border-radius: 10px;
+ }
+ 
+ .btn-cal > input{
+     border: 0;
+     height: 100%;
+     width: 100%;
+     border-radius: 10px;
+     outline: none;
+     color: #7e7e7e;
+     font-size: 35px;
+ }
+ 
+ .btn-cal > .equal{
+     background-color: #fffb88;
+ }
+ 
+ .btn-cal > .clean{
+     background-color: #98f8ab;
+ }
+ 
+ .btn-cal :hover{
+     transition-duration: 0.4s;
+     background-color: #ffb497;
+     color: var(--blanco);
+ }
+ 
+ .btn-clean :hover{
+     transition-duration: 0.4s;
+     background-color: #66f789;
+     color: var(--blanco);
+ }
+ 
+ .btn-equal :hover{
+     transition-duration: 0.4s;
+     background-color: #fffb59;
+     color: var(--negro);
+ }
+
+/*============================================*/
+/*================Menu Horisontal=============*/
+/*============================================*/
+.btn-menu{
+    cursor: pointer;
+}
+.container-menu{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.4s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.cont-menu{
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    position: relative;
+    transition: all 0.5s ease;
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: var(--blanco);
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#btn-menu{
+    display: none;
+}
+#btn-menu:checked ~ .container-menu{
+    opacity: 1;
+    visibility: visible;
+}
+/*============================================*/
+
+/*============================================*/
+/*====================Tablas==================*/
+/*============================================*/
+.tabla{
+    width: 100%;
+    padding: 10px;
+}
+.columna{
+    width: 100%;
+}
+.columna .dia{
+    width: 20%;
+}
+.columna .dolar,
+.columna .peso{
+    width: 40%;
+}
+.columna .negrita{
+    font-size: 25px;
+    padding: 10px 15px;
+    text-align: center;
+}
+.columna .dia-semana{
+    font-size: 20px;
+    padding: 5px;
+}
+.columna .dinero{
+    font-size: 20px;
+    text-align: center;
+}
+.columna .total{
+    font-size: 25px;
+    padding: 5px;
+}
+/*============================================*/

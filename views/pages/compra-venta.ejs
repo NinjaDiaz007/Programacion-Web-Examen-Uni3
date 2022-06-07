@@ -1,0 +1,14 @@
+<section class="form-venta">
+    <label for="de">Convertir De</label>
+    <select class="controles" id="de" onchange="Convertir()">
+        <option value="1">A La Venta</option>
+        <option value="2">A La Compra</option>
+    </select>
+
+    <label for="Cantidad" class="texto">Ingrese su Cantidad</label>
+    <input type="text" class="controles" id="Cantidad" onchange="Convertir()">
+    <input type="button" class="boton" value="Enviar" onclick="Convertir()">
+
+    <br>
+    <h1 id="resultado"></h1>
+</section>
